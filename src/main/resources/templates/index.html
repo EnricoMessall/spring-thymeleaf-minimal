@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+</head>
+<body>
+<h1>App</h1>
+<form method="post" th:action="@{/}" th:object="${testDto}">
+    <input th:field="*{test}">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
